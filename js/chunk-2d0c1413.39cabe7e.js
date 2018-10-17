@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0c1413"],{"44eb":function(e,t,n){"use strict";n.r(t);var a=function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("d2-container",{staticClass:"page"},[n("d2-page-cover",{attrs:{title:"I AM CVICSE ADMIN","sub-title":"企业内部应用前端模板"}})],1)},s=[],c=n("2877"),l={},i=Object(c["a"])(l,a,s,!1,null,null,null);i.options.__file="page.vue";var r=i.exports;t["default"]=r}}]);
-//# sourceMappingURL=chunk-2d0c1413.39cabe7e.js.map
