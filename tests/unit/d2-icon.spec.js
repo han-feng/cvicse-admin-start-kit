@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import D2Icon from '@/components/d2-icon/index.vue'
+import D2Icon from '@/frame/components/d2-icon/index.vue'
 
 describe('d2-icon', () => {
   // 存在且是Vue组件实例

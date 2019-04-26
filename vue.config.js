@@ -27,7 +27,7 @@ module.exports = {
     loaderOptions: {
       // 设置 scss 公用变量文件
       sass: {
-        data: `@import '~@/assets/style/public.scss';`
+        data: `@import '~@/frame/assets/style/public.scss';`
       }
     }
   },
@@ -92,7 +92,7 @@ module.exports = {
     svgRule.uses.clear()
     svgRule
       .include
-      .add(resolve('src/assets/svg-icons/icons'))
+      .add(resolve('src/frame/assets/svg-icons/icons'))
       .end()
       .use('svg-sprite-loader')
       .loader('svg-sprite-loader')
@@ -106,12 +106,16 @@ module.exports = {
     imagesRule
       .test(/\.(png|jpe?g|gif|webp|svg)(\?.*)?$/)
       .exclude
-      .add(resolve('src/assets/svg-icons/icons'))
+      .add(resolve('src/frame/assets/svg-icons/icons'))
       .end()
 
     // 重新设置 alias
     // config.resolve.alias
-    //   .set('modular-vue', resolve('src/vue')) // 本地调试modular模块时可采用这种配置重定向到本地目录
+    // 本地调试modular模块时可采用这种配置重定向到本地目录
+    // .set('modular-webframe', resolve('src/frame'))
+    // .set('modular-vue', resolve('src/vue'))
+    // 或者将本地引用映射到npm模块
+    // .set('@/frame', 'modular-webframe')
 
     // 判断环境加入模拟数据
     if (process.env.VUE_APP_BUILD_MODE !== 'nomock') {

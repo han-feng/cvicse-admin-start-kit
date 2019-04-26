@@ -3,9 +3,9 @@ import { Message, MessageBox, Notification, Loading } from 'element-ui'
 // flex 布局库
 import 'flex.css'
 // 组件
-import '@/components'
+import '../../components'
 // svg 图标
-import '@/assets/svg-icons'
+import '@/frame/assets/svg-icons'
 // 过滤器
 import d2VueFiltersDate from '@d2-projects/vue-filters-date'
 // 功能插件

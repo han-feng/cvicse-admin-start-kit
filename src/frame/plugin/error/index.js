@@ -1,5 +1,5 @@
 import { store } from 'modular-vue'
-import util from '@/libs/util'
+import util from '@/frame/libs/util'
 import setting from '@/setting'
 
 export default {

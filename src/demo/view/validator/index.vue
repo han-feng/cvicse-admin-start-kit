@@ -55,7 +55,7 @@
 
 <script>
 import { Form, Input, Button } from 'element-ui'
-import FormItem from '@/components/extends/form-item'
+import FormItem from '@/frame/components/extends/form-item'
 
 export default {
   name: 'demo-validator',
