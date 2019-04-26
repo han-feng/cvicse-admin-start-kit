@@ -1,7 +1,7 @@
 // FIXME 临时跑通逻辑
-import menu from '@/menu'
+import menu from '@/app/menu'
 import { frameRoute } from './routes'
-import util from '@/libs/util'
+import util from '@/frame/libs/util'
 import setting from '@/setting'
 
 export default {

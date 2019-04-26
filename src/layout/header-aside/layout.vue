@@ -97,7 +97,7 @@ import d2HeaderUser from './components/header-user'
 import d2HeaderErrorLog from './components/header-error-log'
 import iframes from './components/iframes'
 import { mapState, mapGetters, mapActions } from 'vuex'
-import PageManager from '@/mixins/BasePageManager'
+import PageManager from '@/frame/mixins/BasePageManager'
 import mixinSearch from './mixins/search'
 export default {
   name: 'd2-layout-header-aside',
@@ -170,5 +170,5 @@ export default {
 
 <style lang="scss">
 // 注册主题
-@import '~@/assets/style/theme/register.scss';
+@import '~@/frame/assets/style/theme/register.scss';
 </style>

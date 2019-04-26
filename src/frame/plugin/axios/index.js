@@ -1,7 +1,7 @@
 import { store } from 'modular-vue'
 import axios from 'axios'
 import { Message } from 'element-ui'
-import util from '@/libs/util'
+import util from '@/frame/libs/util'
 import serverConfig from 'serverConfig'
 
 // 记录和显示错误

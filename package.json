@@ -62,7 +62,6 @@
     "eslint-plugin-vue": "^5.2.2",
     "http-server": "^0.11.1",
     "jest": "^23.6.0",
-    "lint-staged": "^8.1.4",
     "sass": "^1.19.0",
     "sass-loader": "^7.0.1",
     "svg-sprite-loader": "^4.1.3",

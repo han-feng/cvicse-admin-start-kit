@@ -1,14 +1,14 @@
 @import 'public';
 
 // 补丁 base
-@import '~@/assets/style/fixed/base.scss';
+@import '~@/frame/assets/style/fixed/base.scss';
 // 补丁 element
-@import '~@/assets/style/fixed/element.scss';
+@import '~@/frame/assets/style/fixed/element.scss';
 // 补丁 n-progress
-@import '~@/assets/style/fixed/n-progress.scss';
+@import '~@/frame/assets/style/fixed/n-progress.scss';
 
 // 动画
-@import '~@/assets/style/animate/vue-transition.scss';
+@import '~@/frame/assets/style/animate/vue-transition.scss';
 
 // 在这里写公用的class
 // 注意 这个文件里只写class

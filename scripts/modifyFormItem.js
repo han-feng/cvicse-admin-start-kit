@@ -1,6 +1,6 @@
 const fs = require('fs')
 const src = 'node_modules/element-ui/packages/form/src/form-item.vue'
-const target = 'src/components/extends/form-item.vue'
+const target = 'src/frame/components/extends/form-item.vue'
 const exp = /<template>[\d\D]*<\/template>/
 
 console.log('Modify FormItem ......')

@@ -1,4 +1,4 @@
-import UrlMatcher from '@/libs/UrlMatcher'
+import UrlMatcher from '@/frame/libs/UrlMatcher'
 
 const userPermissions = [
   '/login',

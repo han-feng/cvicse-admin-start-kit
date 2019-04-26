@@ -11,5 +11,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~@/assets/style/public-class.scss';
+@import '~@/frame/assets/style/public-class.scss';
 </style>
