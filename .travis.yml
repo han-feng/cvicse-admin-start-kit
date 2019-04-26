@@ -18,6 +18,7 @@ script:
 jobs:
   include:
     - stage: Deploy to Github
+      if: branch = master
       node_js: stable
       deploy:
         provider: pages
@@ -25,9 +26,7 @@ jobs:
         skip-cleanup: true
         github-token: $GITHUB_TOKEN
         keep-history: true
-        on:
-          branch: master
-    - stage: QA Report
+    - stage: Publish QA Reports
       node_js: stable
       script:
         - npx codecov --token=$CODECOV_TOKEN
