@@ -1,6 +1,9 @@
 language: node_js
 
-node_js: stable
+node_js:
+  - stable
+  - 10
+  - 8
 
 addons:
   sonarcloud:
@@ -12,15 +15,20 @@ script:
   - npm run build:travis
   - npm test
 
-deploy:
-  provider: pages
-  local-dir: target/dist
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  keep-history: true
-  on:
-    branch: master
-
-after_success:
-  - npx codecov --token=$CODECOV_TOKEN
-  - sonar-scanner
+jobs:
+  include:
+    - stage: Deploy to Github
+      node_js: stable
+      deploy:
+        provider: pages
+        local-dir: target/dist
+        skip-cleanup: true
+        github-token: $GITHUB_TOKEN
+        keep-history: true
+        on:
+          branch: master
+    - stage: QA Report
+      node_js: stable
+      script:
+        - npx codecov --token=$CODECOV_TOKEN
+        - sonar-scanner

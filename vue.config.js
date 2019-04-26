@@ -111,7 +111,7 @@ module.exports = {
 
     // 重新设置 alias
     // config.resolve.alias
-    //   .set('modular-vue', resolve('src/vue'))
+    //   .set('modular-vue', resolve('src/vue')) // 本地调试modular模块时可采用这种配置重定向到本地目录
 
     // 判断环境加入模拟数据
     if (process.env.VUE_APP_BUILD_MODE !== 'nomock') {

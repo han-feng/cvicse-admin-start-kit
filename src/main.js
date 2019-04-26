@@ -10,8 +10,6 @@ files.keys().forEach(key => {
   modules.push(files(key).default)
 })
 
-console.log('>>>>>', modules)
-
 // 应用配置
 const application = {
   name: process.env.VUE_APP_NAME,
@@ -29,8 +27,6 @@ const modular = new Modular({
   application
 })
 window.$modular = Object.freeze(modular)
-
-console.log('>>>>>>>>>>>> ', modular)
 
 // 应用启动
 modular.start()

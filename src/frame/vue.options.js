@@ -20,9 +20,8 @@ export default {
       setting.releases.name,
       `v${setting.releases.version} (${setting.releases.buildTime})`
     )
-    if (process.env.NODE_ENV === 'development') {
-      console.log(process.env)
-    }
+    console.log(process.env)
+
     // 用户登录后从数据库加载一系列的设置
     this.$store.dispatch('d2admin/account/load')
     // 获取并记录用户 UA
