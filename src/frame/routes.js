@@ -1,4 +1,4 @@
-import layoutHeaderAside from '@/layout/header-aside'
+import layoutHeaderAside from './layout/header-aside'
 
 /**
  * 在主框架内显示
