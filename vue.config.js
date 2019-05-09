@@ -1,5 +1,6 @@
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const TerserPlugin = require('terser-webpack-plugin')
+const ModularWebpackPlugin = require('./scripts/modular-webpack-plugin')
 
 // 拼接路径
 const resolve = dir => require('path').join(__dirname, dir)
@@ -87,6 +88,13 @@ module.exports = {
       .loader('@kazupon/vue-i18n-loader')
       .end()
 
+    config.module
+      .rule('modular')
+      .test(/modular\.config$/)
+      .use('modular-loader')
+      .loader('./scripts/modular-loader')
+      .end()
+
     // svg
     const svgRule = config.module.rule('svg')
     svgRule.uses.clear()
@@ -128,6 +136,7 @@ module.exports = {
   configureWebpack: {
     plugins: [
       // new BundleAnalyzerPlugin()
+      new ModularWebpackPlugin()
     ],
     externals: {
       logger: 'console',
