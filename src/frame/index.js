@@ -1,7 +1,6 @@
 /**
  * 模块描述文件
  */
-
 import { ExtensionPointType } from 'modular-core'
 
 import vueOptions from './vue.options'
