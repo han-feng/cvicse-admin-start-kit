@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import D2ContainerCardBs from '@/frame/components/d2-container/components/d2-container-card-bs.vue'
+import D2ContainerCardBs from '@xportal/frame/components/d2-container/components/d2-container-card-bs.vue'
 
 describe('d2-container-card-bs', () => {
   // 存在且是Vue组件实例

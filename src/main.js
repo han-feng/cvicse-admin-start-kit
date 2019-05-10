@@ -1,6 +1,6 @@
 import Modular from 'modular-core'
 import modules from '../modular.config' // 通过 ModularLoader 加载所有模块配置
-import util from '@/frame/libs/util'
+import util from '@xportal/frame/libs/util'
 import App from '@/App'
 import menu from '@/app/menu'
 import setting from '@/setting'

@@ -20,6 +20,7 @@
   "dependencies": {
     "@d2-projects/d2-crud": "^2.1.0",
     "@d2-projects/vue-filters-date": "^1.0.9",
+    "@xportal/frame": "^0.1.1",
     "axios": "^0.18.0",
     "better-scroll": "^1.15.2",
     "dayjs": "^1.8.14",

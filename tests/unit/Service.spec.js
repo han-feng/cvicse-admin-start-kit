@@ -1,4 +1,4 @@
-import Service from '@/frame/libs/Service'
+import Service from '@xportal/frame/libs/Service'
 
 describe('Service 单元测试', () => {
   it('getUrl 功能验证', () => {

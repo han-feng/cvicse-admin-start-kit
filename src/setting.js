@@ -1,5 +1,5 @@
 // 许可类型常量
-import { ANONYMOUS, CHECK } from '@/frame/libs/Auth.Constant'
+import { ANONYMOUS, CHECK } from '@xportal/frame/libs/Auth.Constant'
 
 export default {
   // 快捷键

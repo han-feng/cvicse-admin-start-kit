@@ -22,13 +22,14 @@ module.exports = {
   transpileDependencies: [
     'modular-core',
     'modular-vue',
+    '@xportal',
     'vuex-along'
   ],
   css: {
     loaderOptions: {
       // 设置 scss 公用变量文件
       sass: {
-        data: `@import '~@/frame/assets/style/public.scss';`
+        data: `@import '@xportal/frame/assets/style/public.scss';`
       }
     }
   },
@@ -100,7 +101,7 @@ module.exports = {
     svgRule.uses.clear()
     svgRule
       .include
-      .add(resolve('src/frame/assets/svg-icons/icons'))
+      .add(resolve('node_modules/@xportal/frame/assets/svg-icons/icons'))
       .end()
       .use('svg-sprite-loader')
       .loader('svg-sprite-loader')
@@ -114,7 +115,7 @@ module.exports = {
     imagesRule
       .test(/\.(png|jpe?g|gif|webp|svg)(\?.*)?$/)
       .exclude
-      .add(resolve('src/frame/assets/svg-icons/icons'))
+      .add(resolve('node_modules/@xportal/frame/assets/svg-icons/icons'))
       .end()
 
     // 重新设置 alias
@@ -123,7 +124,7 @@ module.exports = {
     // .set('modular-webframe', resolve('src/frame'))
     // .set('modular-vue', resolve('src/vue'))
     // 或者将本地引用映射到npm模块
-    // .set('@/frame', 'modular-webframe')
+    // .set('@/frame', '@xportal/frame')
 
     // 判断环境加入模拟数据
     if (process.env.VUE_APP_BUILD_MODE !== 'nomock') {

@@ -7,8 +7,8 @@
  */
 // jest.mock('modular-vue', () => {})
 
-const { ANONYMOUS, LOGGEDIN, CHECK } = require('@/frame/libs/Auth.Constant')
-const { getPermissionType, forEachMatch, treeMatch } = require('@/frame/libs/Auth')
+const { ANONYMOUS, LOGGEDIN, CHECK } = require('@xportal/frame/libs/Auth.Constant')
+const { getPermissionType, forEachMatch, treeMatch } = require('@xportal/frame/libs/Auth')
 
 const userPermissions = [
   '/login',
