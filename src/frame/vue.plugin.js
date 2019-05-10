@@ -1,5 +1,5 @@
-import Auth from '@/frame/libs/Auth'
-import Validator from '@/frame/libs/Validator'
+import Auth from './libs/Auth'
+import Validator from './libs/Validator'
 
 export default {
   install (Vue) {
