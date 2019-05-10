@@ -6,8 +6,8 @@ import 'nprogress/nprogress.css'
 
 import { router, store } from 'modular-vue'
 
-import util from '@/frame/libs/util.js'
-import { checkPermission } from '@/frame/libs/Auth'
+import util from './libs/util.js'
+import { checkPermission } from './libs/Auth'
 
 export default {
 /**

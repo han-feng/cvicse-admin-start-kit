@@ -32,6 +32,9 @@ export default {
   extensionPoints: {
     menu: {
       type: ExtensionPointType.Multiple
+    },
+    setting: {
+      type: ExtensionPointType.Multiple
     }
   }
 }

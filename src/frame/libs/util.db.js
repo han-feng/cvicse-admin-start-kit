@@ -1,6 +1,6 @@
 import low from 'lowdb'
 import LocalStorage from 'lowdb/adapters/LocalStorage'
-import setting from '@/setting.js'
+import setting from '@/setting'
 
 const adapter = new LocalStorage(`${setting.releases.name}-${setting.releases.version}`)
 const db = low(adapter)

@@ -1,7 +1,7 @@
 // 设置文件
-import setting from '@/setting.js'
+import setting from '@/setting'
 import { uniqueId, isArray, cloneDeep } from 'lodash'
-import { checkPermission } from '@/frame/libs/Auth'
+import { checkPermission } from '../../../libs/Auth'
 
 export default {
   namespaced: true,

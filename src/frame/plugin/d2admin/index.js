@@ -5,7 +5,7 @@ import 'flex.css'
 // 组件
 import '../../components'
 // svg 图标
-import '@/frame/assets/svg-icons'
+import '../../assets/svg-icons'
 // 过滤器
 import d2VueFiltersDate from '@d2-projects/vue-filters-date'
 // 功能插件

@@ -1,4 +1,4 @@
-import util from '@/frame/libs/util'
+import util from '../../libs/util'
 
 export default {
   install (Vue, options) {

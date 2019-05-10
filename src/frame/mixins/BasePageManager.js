@@ -1,4 +1,4 @@
-import util from '@/frame/libs/util'
+import util from '../libs/util'
 /**
  * 多页面管理器，能够管理多个子页面，通过router-view显示子页面，通过tabs操作子页面
  */

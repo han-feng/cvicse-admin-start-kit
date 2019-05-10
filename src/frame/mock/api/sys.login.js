@@ -1,6 +1,6 @@
 import Qs from 'qs'
 import Mock from 'mockjs'
-import Service from '@/frame/libs/Service'
+import Service from '../../libs/Service'
 
 const userDB = [
   {

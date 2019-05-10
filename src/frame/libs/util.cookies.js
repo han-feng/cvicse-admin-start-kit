@@ -1,5 +1,5 @@
 import Cookies from 'js-cookie'
-import setting from '@/setting.js'
+import setting from '@/setting'
 
 const cookies = {}
 

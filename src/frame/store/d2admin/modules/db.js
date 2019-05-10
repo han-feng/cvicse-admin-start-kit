@@ -1,4 +1,4 @@
-import util from '@/frame/libs/util'
+import util from '../../../libs/util'
 import { router, store } from 'modular-vue'
 import { cloneDeep } from 'lodash'
 
