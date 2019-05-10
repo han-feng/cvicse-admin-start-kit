@@ -11,7 +11,7 @@ module.exports = {
     '^.+\\.jsx?$': 'babel-jest'
   },
   'transformIgnorePatterns': [
-    '<rootDir>/node_modules/(?!(modular-core|modular-vue|vuex-along))'
+    '<rootDir>/node_modules/(?!(modular-core|modular-vue|@xportal|vuex-along))'
   ],
   'moduleNameMapper': {
     '^@/(.*)$': '<rootDir>/src/$1',

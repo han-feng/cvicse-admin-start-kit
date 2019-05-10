@@ -1,4 +1,4 @@
-import UrlMatcher from '@/frame/libs/UrlMatcher'
+import UrlMatcher from '@xportal/frame/libs/UrlMatcher'
 
 const userPermissions = [
   '/login',
